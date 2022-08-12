@@ -21,3 +21,7 @@ pnpm-debug.log*
 *.njsproj
 *.sln
 *.sw?
+DB_HOST => bxht6selhvd92473x2zj-mysql.services.clever-cloud.com
+DB_USER => unnsohicuxpwelbf
+DB_PASS => LqgUPlD5lOoQ1WExtnlS
+DB_NAME => bxht6selhvd92473x2zj
