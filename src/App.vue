@@ -1,13 +1,16 @@
 <template>
   <navbar />
+  <Footer />
   <router-view />
 </template>
 <script>
 import navbar from "./components/navbar";
+import Footer from "./components/Footer";
 export default {
   name: "App",
   components: {
     navbar,
+    Footer,
   },
 };
 </script>
@@ -18,7 +21,7 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  background-color: black;
   overflow-x: hidden;
 }
 </style>

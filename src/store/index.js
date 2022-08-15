@@ -21,19 +21,19 @@ export default createStore({
     login: async (context, data) => {
       const { email, password } = data;
       const response = await fetch(
-        `http://localhost:3000/users?email=${email}&password=${password}`
+        `http://localhost:6969/users?email=${email}&password=${password}`
       );
       const usersData = await response.json();
       console.log(usersData);
       console.log(router);
-      router.push({
-        name: "products",
-      });
+      // router.push({
+      //   name: "products",
+      // });
       context.commit("setusers", usersData[0]);
     },
     register: async (context, data) => {
       const { FullName, email, password } = data;
-      fetch("http://localhost:3000/users", {
+      fetch("http://localhost:6969/users", {
         method: "POST",
         body: JSON.stringify({
           FullName: FullName,

@@ -3,9 +3,10 @@
     <nav class="navbar">
       <ul>
         <li><a href="/">Home</a></li>
-        <li><a href="">Products</a></li>
+        <li><a href="/About.vue">About</a></li>
+        <li><a href="/products">Products</a></li>
         <li><a href="">Sign Up</a></li>
-        <li><a href="">Login</a></li>
+        <li><a href="/login">Login</a></li>
         <i class="fa-solid fa-cart-shopping"></i>
       </ul>
     </nav>
@@ -21,7 +22,7 @@ ul {
   padding: 0;
   width: 100%;
   overflow: hidden;
-  background-color: white;
+  background-color: black;
   border-bottom: 2px solid black;
 }
 
@@ -31,11 +32,14 @@ li {
 
 li a {
   display: block;
-  color: black;
+  color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   font-family: "Rampart One", cursive;
+}
+i {
+  color: white;
 }
 
 /* Change the link color to #111 (black) on hover */

@@ -1,54 +1,170 @@
 <template>
-  <div class="container">
-    <form>
-      <input type="text" name="email" placeholder="Email:" />
-      <input type="text" name="password" placeholder="Password:" />
-      <button>Login</button>
-      <div class="form-extra">
-        <a href=""><p>Register</p></a>
-        <a href=""><p>Forgot-Psw</p></a>
+  <div class="home">
+    <div class="container">
+      <div class="row">
+        <h1>FOOT LOCKER</h1>
       </div>
-    </form>
+    </div>
+    <div class="row">
+      <img class="home-image" src="https://i.postimg.cc/4NfwqTKw/baf1.jpg" />
+    </div>
+  </div>
+  <div class="aboutish">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <img
+            class="one"
+            src="https://i.postimg.cc/MpGNQqT4/dunk-high.webp"
+            alt="dunk"
+          />
+          <h3>Nike dunk High</h3>
+        </div>
+        <div class="col">
+          <img
+            src="https://i.postimg.cc/Y0pbBzLV/air-jordan-3-elephant.jpg"
+            class="two"
+            alt="jordan"
+          />
+          <h3>Air Jordan 3</h3>
+        </div>
+        <div class="col">
+          <img
+            src="https://i.postimg.cc/Y0sgD66Q/ozelia.webp"
+            class="three"
+            alt="adidas"
+          />
+          <h3>Adidas Ozelia</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="justdropped">
+    <h1>Just Dropped</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <img
+            src="https://i.postimg.cc/bv6VXHDd/lemon-frost.jpg"
+            class="four"
+            alt="jordans"
+          />
+          <h2>Nike Lemon-Frost</h2>
+          <h3>R 2 399,95</h3>
+        </div>
+        <div class="col">
+          <img
+            src="https://i.postimg.cc/6q4mf2Qq/stealth.jpg"
+            class="five"
+            alt=""
+          />
+          <h2>Jordan "Stealth"</h2>
+          <h3>R3999.99</h3>
+        </div>
+        <div class="col">
+          <img
+            src="https://i.postimg.cc/7Y3nSMNd/white-air.webp"
+            class="six"
+            alt="airforce"
+          />
+          <h2>Nike Air force</h2>
+          <h3>R2499.99</h3>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <img
+                src="https://i.postimg.cc/8zhJLQ0R/nike-logo.jpg"
+                alt="img"
+                class="logo"
+              />
+            </div>
+            <div class="col-md-8">
+              <img
+                src="https://i.postimg.cc/DyG8K3F9/airforce.jpg"
+                alt="logo"
+                class="shoe"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
-<script></script>
-<style>
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 90vh;
+<script>
+import Home from "../views/Home.vue";
+import Contact from "../views/Contact.vue";
+import Footer from "@/components/Footer.vue";
+export default {
+  components: { Footer },
+  views: {
+    Home,
+    Contact,
+  },
+};
+</script>
+<style scoped>
+h1 {
+  font-size: 10rem;
+  font-family: "Rampart One";
+  color: #ba181b;
+  margin-bottom: 3rem;
 }
-form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border-radius: 10px;
-  box-shadow: 5px 5px 5px 5px skyblue;
+h2 {
+  color: white;
+  margin-top: 3rem;
+}
+h3 {
+  color: white;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.home-image {
+  width: 85rem;
+  height: 45rem;
+  box-shadow: 5px 5px 5px 5px #ba181b;
+  margin-left: 5.5rem;
+  margin-bottom: 5rem;
+}
+img.one {
+  width: 25rem;
   height: 400px;
-  width: 400px;
-  gap: 20px;
+  box-shadow: 5px 5px 5px 5px #ba181b;
 }
-.form-extra {
-  display: flex;
-  gap: 10px;
+img.two {
+  width: 25rem;
+  height: 400px;
+  box-shadow: 5px 5px 5px 5px #ba181b;
 }
-.form-extra p {
-  background: skyblue;
-  width: 100px;
-  height: 30px;
-  border-radius: 10px;
-  color: black;
+img.three {
+  width: 25rem;
+  height: 400px;
+  box-shadow: 5px 5px 5px 5px #ba181b;
 }
-button {
-  width: 210px;
-  border-radius: 10px;
-  background: skyblue;
-  border: none;
-  height: 30px;
+img.four {
+  width: 25rem;
+  height: 400px;
+  box-shadow: 5px 5px 5px 5px #ba181b;
 }
-.form-extra a {
-  text-decoration: none;
+img.five {
+  width: 25rem;
+  height: 400px;
+  box-shadow: 5px 5px 5px 5px #ba181b;
+}
+img.six {
+  width: 25rem;
+  height: 400px;
+  box-shadow: 5px 5px 5px 5px #ba181b;
+}
+.shoe {
+  width: 45rem;
+  height: 40rem;
+  margin-bottom: 5rem;
+}
+.logo {
+  width: 31.7rem;
+  height: 40rem;
+  margin-bottom: 5rem;
 }
 </style>
