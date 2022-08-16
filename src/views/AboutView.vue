@@ -67,14 +67,14 @@
 </template>
 <style scoped>
 .about {
-  background-color: black;
+  background-color: white;
 }
 h1 {
-  color: white;
+  color: black;
   margin-top: 4rem;
 }
 h2 {
-  color: white;
+  color: black;
   margin-bottom: 5rem;
   margin-top: 3rem;
   font-size: 15px;
@@ -117,7 +117,111 @@ h2 {
   color: darkred;
 }
 h3 {
-  color: white;
+  color: black;
   font-size: 20px;
+}
+/* media queries */
+/* media queries */
+
+@media (min-width: 300px) and (max-width: 1032px) {
+  .h1 {
+    font-size: 10px;
+  }
+}
+@media (min-width: 655px) and (max-width: 670px) {
+  .i {
+    margin-right: 3px;
+  }
+}
+@media (min-width: 500px) and (max-width: 666px) {
+  .about1 {
+    height: 17rem;
+    width: 15rem;
+  }
+  h2 {
+    font-size: 7px;
+  }
+  i {
+    margin-top: 3rem;
+  }
+  .shelf {
+    width: 10rem;
+    height: 10rem;
+  }
+  .cust {
+    width: 10rem;
+    height: 10rem;
+  }
+  .shelf1 {
+    width: 10rem;
+    height: 10rem;
+  }
+}
+@media (min-width: 440px) and (max-width: 501px) {
+  .about1 {
+    width: 12rem;
+    height: 17rem;
+  }
+  h2 {
+    font-size: 7px;
+  }
+  .cust {
+    width: 12rem;
+    height: 17rem;
+  }
+  .shelf1[data-v-4cebd208] {
+    width: 15rem;
+    height: 17rem;
+  }
+}
+@media (min-width: 400px) and (max-width: 435px) {
+  .about1 {
+    width: 15rem;
+    height: 30rem;
+  }
+  h2 {
+    font-size: 7px;
+
+  }
+  .shelf {
+    width:15rem;
+    height: 25rem;
+  }
+  h3 {
+    font-size:10px ;
+  }
+  .cust {
+    width: 15rem;
+    height: 25rem;
+  }
+  .shelf1 {
+    width: 15rem;
+    height:25rem ;
+  }
+
+}
+@media (min-width: 300px) and (max-width: 400px) {
+  .about1 {
+    width:10rem;
+    height: 15rem;
+  }
+  h2 {
+    font-size: 5px;
+  }
+  .shelf {
+     width:10rem;
+    height: 15rem;
+  }
+  h3 {
+    font-size: 7px;
+  }
+  .cust {
+     width:10rem;
+    height: 15rem;
+  }
+  .shelf1 {
+     width:10rem;
+    height: 15rem;
+  }
 }
 </style>

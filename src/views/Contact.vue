@@ -18,16 +18,8 @@
             <form action="#">
               <h2 class="lg-view">Contact</h2>
               <h2 class="sm-view">Let's Chat</h2>
-              <p>* Required</p>
-              <div class="social-container">
-                <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
-                <a href="#" class="social"
-                  ><i class="fab fa-google-plus-g"></i
-                ></a>
-                <a href="#" class="social"
-                  ><i class="fab fa-linkedin-in"></i
-                ></a>
-              </div>
+              <p>Required</p>
+
               <input type="text" placeholder="Name *" />
               <input type="email" placeholder="Email *" />
               <input type="text" placeholder="Company" />
@@ -68,7 +60,7 @@ body {
 }
 
 .container {
-  background-color: $white;
+  background-color: white;
   border-radius: 5px;
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
   position: relative;
@@ -77,12 +69,20 @@ body {
   max-width: 100%;
   min-height: 480px;
   min-width: 370px;
+  margin-left: 25rem;
 }
-
+.form-container[data-v-df212a54] {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
 h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
-  color: white;
+  color: black;
+}
+p {
+  color: black;
 }
 .form-container {
   display: flex;
@@ -91,13 +91,13 @@ h2 {
 .left-container {
   flex: 1;
   height: 480px;
-  background-color: $teal;
+  background-color: teal;
 }
 .right-container {
   display: flex;
   flex: 1;
   height: 460px;
-  background-color: $white;
+  background-color: white;
   justify-content: center;
   align-items: center;
 }
@@ -108,7 +108,7 @@ h2 {
   height: 480px;
   justify-content: center;
   align-items: center;
-  color: $white;
+  color: white;
 }
 
 .left-container p {
@@ -130,7 +130,7 @@ h2 {
 
 input,
 textarea {
-  background-color: #eee;
+  background-color: white;
   border: none;
   padding: 12px 15px;
   margin: 8px 0;
@@ -140,14 +140,14 @@ textarea {
 
 input:focus,
 textarea:focus {
-  outline: 1px solid $teal;
+  outline: 1px solid teal;
 }
 
 button {
   border-radius: 20px;
-  border: 1px solid #00b4cf;
-  background-color: #00b4cf;
-  color: #ffffff;
+  border: 1px solid red;
+  background-color: white;
+  color: black;
   font-size: 12px;
   font-weight: bold;
   padding: 12px 45px;

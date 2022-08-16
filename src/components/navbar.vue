@@ -5,10 +5,12 @@
         <li><a href="/">Home</a></li>
         <li><a href="/about">About</a></li>
         <li><a href="/products">Products</a></li>
-        <li><a href="">Sign Up</a></li>
+        <li><a href="/register">Register</a></li>
         <li><a href="/login">Login</a></li>
         <li><a href="/contact">Contact</a></li>
-        <i class="fa-solid fa-cart-shopping"></i>
+        <li>
+          <a href="/cart"> <i class="fa-solid fa-cart-shopping"></i></a>
+        </li>
       </ul>
     </nav>
   </div>

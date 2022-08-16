@@ -12,14 +12,13 @@ export default {};
 </script>
 <style scoped>
 i {
-  color: white;
+  color: black;
   display: flex;
   justify-content: center;
-  align-content: space-between;
-  gap: 2rem;
-  
+  align-items: center;
+  flex-direction: row;
 }
 h2 {
-  color: white;
+  color: black;
 }
 </style>

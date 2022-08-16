@@ -95,9 +95,8 @@
 <script>
 import Home from "../views/Home.vue";
 import Contact from "../views/Contact.vue";
-import Footer from "@/components/Footer.vue";
+
 export default {
-  components: { Footer },
   views: {
     Home,
     Contact,
@@ -105,21 +104,27 @@ export default {
 };
 </script>
 <style scoped>
+.fa-cart-shopping:before,
+.fa-shopping-cart:before {
+  content: "\f07a";
+  margin-left: 30rem;
+}
 h1 {
   font-size: 10rem;
   font-family: "Rampart One";
-  color: #ba181b;
+  color: darkred;
   margin-bottom: 3rem;
 }
 h2 {
-  color: white;
+  color: black;
   margin-top: 3rem;
 }
 h3 {
-  color: white;
+  color: black;
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
+
 .home-image {
   width: 85rem;
   height: 45rem;
@@ -129,7 +134,7 @@ h3 {
 }
 .home-image:hover {
   background: red;
-  box-shadow: 5px 5px 5px 5px white;
+  box-shadow: 5px 5px 5px 5px black;
   color: darkred;
 }
 img.one {
@@ -140,7 +145,7 @@ img.one {
 }
 img.one:hover {
   background: red;
-  box-shadow: 5px 5px 5px 5px white;
+  box-shadow: 5px 5px 5px 5px black;
   color: darkred;
 }
 img.two {
@@ -150,7 +155,7 @@ img.two {
 }
 img.two:hover {
   background: red;
-  box-shadow: 5px 5px 5px 5px white;
+  box-shadow: 5px 5px 5px 5px black;
   color: darkred;
 }
 img.three {
@@ -160,7 +165,7 @@ img.three {
 }
 img.three:hover {
   background: red;
-  box-shadow: 5px 5px 5px 5px white;
+  box-shadow: 5px 5px 5px 5px black;
   color: darkred;
 }
 img.four {
@@ -170,7 +175,7 @@ img.four {
 }
 img.four:hover {
   background: red;
-  box-shadow: 5px 5px 5px 5px white;
+  box-shadow: 5px 5px 5px 5px black;
   color: darkred;
 }
 img.five {
@@ -180,7 +185,7 @@ img.five {
 }
 img.five:hover {
   background: red;
-  box-shadow: 5px 5px 5px 5px white;
+  box-shadow: 5px 5px 5px 5px black;
   color: darkred;
 }
 img.six {
@@ -190,7 +195,7 @@ img.six {
 }
 img.six:hover {
   background: red;
-  box-shadow: 5px 5px 5px 5px white;
+  box-shadow: 5px 5px 5px 5px black;
   color: darkred;
 }
 .shoe {
@@ -201,7 +206,7 @@ img.six:hover {
 }
 .shoe:hover {
   background: red;
-  box-shadow: 5px 5px 5px 5px white;
+  box-shadow: 5px 5px 5px 5px black;
   color: darkred;
 }
 .logo {
@@ -212,12 +217,12 @@ img.six:hover {
 }
 .logo:hover {
   background: red;
-  box-shadow: 5px 5px 5px 5px white;
+  box-shadow: 5px 5px 5px 5px black;
   color: darkred;
 }
 
 /* media queries */
 
-@media (min-width: 300px) and (max-width: 375px) {
+@media (min-width: 300px) and (max-width: 1032px) {
 }
 </style>

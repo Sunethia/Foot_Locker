@@ -53,4 +53,35 @@ h1 {
   width: 18rem;
   margin-left: 3.5rem;
 }
+
+/* media queries */
+@media (min-width: 367px) and (max-width: 481px) {
+  h1 {
+    font-size: 35px;
+  }
+  .card {
+    width: 15rem;
+    height: 15rem;
+  }
+}
+@media (min-width: 300px) and (max-width: 367px) {
+  h1 {
+    font-size: 15px;
+  }
+  .card {
+    width: 10rem;
+    height: 15rem;
+  }
+  .prods {
+    width: 15rem;
+    height: 15rem;
+  }
+  .prods a[data-v-7177119e] {
+    text-decoration: none;
+    color: black;
+    width: 15rem;
+    height: 15rem;
+}
+}
+
 </style>

@@ -57,7 +57,7 @@ form {
   height: 30px;
   width: 200px;
   border-radius: 10px;
-  border: 1px solid lightgray;
+  border: 1px solid black;
 }
 .form-extra {
   display: flex;
@@ -76,6 +76,6 @@ form {
   align-items: center;
 }
 label {
-  color: white;
+  color: red;
 }
 </style>
