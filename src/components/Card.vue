@@ -6,7 +6,9 @@
     <div class="card">
       <img class="product_img" :src="product.imgURL" />
       <p class="product_title">{{ product.title }}</p>
+       <!-- <p class="product_description">{{ product.description }}</p> -->
       <p class="product_price">R{{ product.price }}</p>
+      
     </div>
   </router-link>
 </template>

@@ -54,10 +54,10 @@ form {
   gap: 10px;
 }
 .form-input {
-  height: 30px;  
+  height: 30px;
   width: 200px;
   border-radius: 10px;
-  border: 1px solid lightgrey;
+  border: 1px solid lightgray;
 }
 .form-extra {
   display: flex;
@@ -65,14 +65,17 @@ form {
 }
 .form-extra a {
   text-decoration: none;
-  color: black;
+  color: white;
 }
 .form-extra p {
-  border: 1px solid lightgrey;
+  border: 1px solid red;
   border-radius: 10px;
   height: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+label {
+  color: white;
 }
 </style>

@@ -127,44 +127,97 @@ h3 {
   margin-left: 5.5rem;
   margin-bottom: 5rem;
 }
+.home-image:hover {
+  background: red;
+  box-shadow: 5px 5px 5px 5px white;
+  color: darkred;
+}
 img.one {
   width: 25rem;
   height: 400px;
   box-shadow: 5px 5px 5px 5px #ba181b;
+  transition: width 3s;
+}
+img.one:hover {
+  background: red;
+  box-shadow: 5px 5px 5px 5px white;
+  color: darkred;
 }
 img.two {
   width: 25rem;
   height: 400px;
   box-shadow: 5px 5px 5px 5px #ba181b;
 }
+img.two:hover {
+  background: red;
+  box-shadow: 5px 5px 5px 5px white;
+  color: darkred;
+}
 img.three {
   width: 25rem;
   height: 400px;
   box-shadow: 5px 5px 5px 5px #ba181b;
+}
+img.three:hover {
+  background: red;
+  box-shadow: 5px 5px 5px 5px white;
+  color: darkred;
 }
 img.four {
   width: 25rem;
   height: 400px;
   box-shadow: 5px 5px 5px 5px #ba181b;
 }
+img.four:hover {
+  background: red;
+  box-shadow: 5px 5px 5px 5px white;
+  color: darkred;
+}
 img.five {
   width: 25rem;
   height: 400px;
   box-shadow: 5px 5px 5px 5px #ba181b;
+}
+img.five:hover {
+  background: red;
+  box-shadow: 5px 5px 5px 5px white;
+  color: darkred;
 }
 img.six {
   width: 25rem;
   height: 400px;
   box-shadow: 5px 5px 5px 5px #ba181b;
 }
+img.six:hover {
+  background: red;
+  box-shadow: 5px 5px 5px 5px white;
+  color: darkred;
+}
 .shoe {
   width: 45rem;
   height: 40rem;
   margin-bottom: 5rem;
+  box-shadow: 5px 5px 5px 5px darkred;
+}
+.shoe:hover {
+  background: red;
+  box-shadow: 5px 5px 5px 5px white;
+  color: darkred;
 }
 .logo {
   width: 31.7rem;
   height: 40rem;
   margin-bottom: 5rem;
+  box-shadow: 5px 5px 5px 5px #ba181b;
+}
+.logo:hover {
+  background: red;
+  box-shadow: 5px 5px 5px 5px white;
+  color: darkred;
+}
+
+/* media queries */
+
+@media (min-width: 300px) and (max-width: 375px) {
 }
 </style>

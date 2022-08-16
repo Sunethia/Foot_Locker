@@ -1,174 +1,181 @@
 <template>
-  <div>
-    <button data-bs-toggle="modal" class="btn" data-bs-target="#exampleModal">
-      <div class="float">
-        <i class="fa-solid fa-phone-flip my-float"></i>
-      </div>
-    </button>
-    <!-- Modal -->
-    <div
-      class="modal fade text-center"
-      id="exampleModal"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title text-center" id="exampleModalLabel">
-              Contact Me
-            </h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
+  <div class="contact">
+    <div class="container">
+      <div class="form-container">
+        <div class="left-container">
+          <div class="left-inner-container">
+            <h2>Let's Chat</h2>
+            <p>
+              Whether you have a question, want to start a project or simply
+              want to connect.
+            </p>
+            <br />
+            <p>Feel free to send me a message in the contact form</p>
           </div>
-          <div class="modal-body">
-            <div class="p-3">
-              <form
-                action="https://formspree.io/f/xeqnrenb"
-                method="POST"
-                class="form"
-              >
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="md-form p-2">
-                      <input
-                        type="name"
-                        id="name"
-                        name="name"
-                        class="form-control"
-                        placeholder="Name*"
-                      />
-                      <label for="name" class=""></label>
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="md-form p-2">
-                      <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        class="form-control"
-                        placeholder="Email*"
-                      />
-                      <label for="email" class=""></label>
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-md-12">
-                    <div class="md-form p-2">
-                      <input
-                        type="subject"
-                        id="subject"
-                        name="subject"
-                        class="form-control"
-                        placeholder="Subject*"
-                      />
-                      <label for="subject" class=""></label>
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-md-12">
-                    <div class="md-form p-2">
-                      <textarea
-                        type="text"
-                        id="message"
-                        name="message"
-                        rows="2"
-                        class="form-control md-textarea"
-                        placeholder="Message*"
-                      ></textarea>
-                      <label for="message"></label>
-                    </div>
-                  </div>
-                </div>
-                <div class="contact-btn row p-3">
-                  <div class="col-md-6">
-                    <button
-                      type="submit"
-                      class="btn btn-outline-success col-lg-6"
-                      target="_blank"
-                    >
-                      Send
-                    </button>
-                  </div>
-                  <div class="col-md-6">
-                    <button
-                      type="button"
-                      class="btn btn-outline-danger col-lg-6"
-                      data-bs-dismiss="modal"
-                    >
-                      Close
-                    </button>
-                  </div>
-                </div>
-              </form>
-            </div>
+        </div>
+        <div class="right-container">
+          <div class="right-inner-container">
+            <form action="#">
+              <h2 class="lg-view">Contact</h2>
+              <h2 class="sm-view">Let's Chat</h2>
+              <p>* Required</p>
+              <div class="social-container">
+                <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social"
+                  ><i class="fab fa-google-plus-g"></i
+                ></a>
+                <a href="#" class="social"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+              </div>
+              <input type="text" placeholder="Name *" />
+              <input type="email" placeholder="Email *" />
+              <input type="text" placeholder="Company" />
+              <input type="phone" placeholder="Phone" />
+              <textarea rows="4" placeholder="Message"></textarea>
+              <button>Submit</button>
+            </form>
           </div>
         </div>
       </div>
     </div>
   </div>
-
-
-  </template>
-<script></script>
+</template>
+<script>
+export default {};
+</script>
 <style scoped>
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,800");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+.contact {
+  min-height: 100vh;
+}
+
 body {
-  font-family: Verdana, Geneva, sans-serif;
-  font-size: 18px;
-  background-color: #ccc;
+  background: linear-gradient(90deg, #be8cef 0%, rgba(61, 46, 232, 0.83) 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Montserrat", sans-serif;
+  font-size: 10px;
+  height: 100vh;
+  margin: -20px 0 50px;
 }
-.float {
-  position: fixed;
-  width: 60px;
-  height: 60px;
-  bottom: 35px;
-  right: 14px;
-  background-color: #11baab;
-  color: #fff;
-  border-radius: 50px;
+
+.container {
+  background-color: $white;
+  border-radius: 5px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  position: relative;
+  overflow: hidden;
+  width: 768px;
+  max-width: 100%;
+  min-height: 480px;
+  min-width: 370px;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+.form-container {
+  display: flex;
+}
+
+.left-container {
+  flex: 1;
+  height: 480px;
+  background-color: $teal;
+}
+.right-container {
+  display: flex;
+  flex: 1;
+  height: 460px;
+  background-color: $white;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-container {
+  display: flex;
+  flex: 1;
+  height: 480px;
+  justify-content: center;
+  align-items: center;
+  color: $white;
+}
+
+.left-container p {
+  font-size: 0.9rem;
+}
+
+.right-inner-container {
+  width: 70%;
+  height: 80%;
   text-align: center;
-  box-shadow: 2px 2px 3px #999;
 }
-.my-float {
-  margin-top: 22px;
+
+.left-inner-container {
+  height: 50%;
+  width: 80%;
+  text-align: center;
+  line-height: 22px;
 }
-.modal-content {
-  background-image: url(https://i.postimg.cc/G3X5xkjQ/gree-contact.jpg);
+
+input,
+textarea {
+  background-color: #eee;
+  border: none;
+  padding: 12px 15px;
+  margin: 8px 0;
+  width: 100%;
+  font-size: 0.8rem;
 }
-.modal-title {
-  font-family: "Playfair Display", serif;
-  color: #cc9d18;
-  text-shadow: 1px 1px 0px #ff0000;
-  font-size: 30pt;
+
+input:focus,
+textarea:focus {
+  outline: 1px solid $teal;
 }
-img {
-  height: 492px;
+
+button {
+  border-radius: 20px;
+  border: 1px solid #00b4cf;
+  background-color: #00b4cf;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 12px 45px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: transform 80ms ease-in;
+  cursor: pointer;
 }
-#contact {
-  background-color: black;
-  /* padding: 50px; */
+
+button:hover {
+  opacity: 0.7;
 }
-.form-control {
-  background-color: #000;
+@media only screen and (max-width: 600px) {
+  .left-container {
+    display: none;
+  }
+  .lg-view {
+    display: none;
+  }
 }
-.send-btn {
-  background-color: black;
+
+@media only screen and (min-width: 600px) {
+  .sm-view {
+    display: none;
+  }
 }
-.fa-phone-flip a {
-  color: #444;
-  text-decoration: none;
-  font-weight: 500;
-  transition: color 0.3s ease-in-out;
-}
-.fa-phone-flip:hover {
-  color: #9d18cc;
+
+form p {
+  text-align: left;
 }
 </style>

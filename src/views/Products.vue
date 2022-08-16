@@ -26,25 +26,31 @@ export default {
 <style scoped>
 h1 {
   font-size: 5rem;
-  color: black;
+  color: darkred;
+  font-family: "Rampart One";
 }
 .prods {
   padding: 20px;
   display: flex;
   flex-wrap: wrap;
   margin-inline: 7%;
-  gap: 20px;
+  gap: 5rem;
   justify-content: center;
   align-items: center;
   font-size: 1.7rem;
   font-weight: bold;
 }
+.card {
+  height: 25rem;
+  width: 20rem;
+}
 .prods a {
   text-decoration: none;
   color: black;
 }
-.image {
-  height: 170px;
-  width: 200px;
+.product_img {
+  height: 15rem;
+  width: 18rem;
+  margin-left: 3.5rem;
 }
 </style>
